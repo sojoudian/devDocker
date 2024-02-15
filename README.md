@@ -3,21 +3,17 @@ This repository contains a Dockerfile and a Python script (server.py) to run a s
 
 ### Setup
 To build and run the Docker container:
-
 Ensure you have Docker installed on your system.
 Clone this repository to your local machine.
 Navigate to the root directory of the repository.
 Building the Docker Image
 To build the Docker image, run the following command:
 
-
 ```bash
 docker build -t toronto-time-server .
 ```
-Running the Docker Container
+##### Running the Docker Container
 Once the image is built, you can run the Docker container using the following command:
-
-
 ```bash
 docker run -d -p 8010:8010 toronto-time-server
 ```
@@ -43,12 +39,13 @@ The server is implemented using Python's built-in http.server module. It creates
 
 The logic for calculating the Toronto time is done by subtracting 5 hours from the current UTC time.
 
-Directory Structure
-Dockerfile: Defines the Docker image for the server.
-server.py: Contains the implementation of the HTTP server.
-README.md: This file.
-Contributions
+#### Directory Structure
+Dockerfile: *Defines the Docker image for the server.*
+server.py: *Contains the implementation of the HTTP server.*
+README.md: *This file.*
+
+#### Contributions
 Contributions to improve or extend this project are welcome! If you encounter any issues or have suggestions for enhancements, please feel free to open an issue or submit a pull request.
 
-License
+##### License
 This project is licensed under the MIT License.
